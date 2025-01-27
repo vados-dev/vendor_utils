@@ -55,7 +55,7 @@ mkdir $(pwd)/android && cd android
 
 # sync
 echo -e "Initializing PBRP repo sync..."
-repo init -q -u https://github.com/vados-dev/manifest_pb.git -b ${MANIFEST_BRANCH} --depth 1
+repo init -q -u https://github.com/vados-dev/manifest_pb.git -b andrid-9.0 --depth 1
 /tmp/keepalive.sh & repo sync -c -q --force-sync --no-clone-bundle --no-tags -j6 #THREADCOUNT is only 2 in remote docker
 kill -s SIGTERM $(cat /tmp/keepalive.pid)
 
