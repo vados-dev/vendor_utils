@@ -8,7 +8,7 @@
 
 import sys, json, urllib.request, shutil, os
 
-url = 'https://raw.githubusercontent.com/PitchBlackRecoveryProject/vendor_utils/Tess/pb_devices.json'
+url = 'https://raw.githubusercontent.com/vados-dev/vendor_utils/Tess/pb_devices.json'
 arguments = sys.argv
 
 def invalid_arguments():
